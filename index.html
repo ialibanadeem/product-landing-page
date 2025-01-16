@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1000;
+    }
+
+    #header-img {
+      width: 50px;
+      height: auto;
+    }
+
+    #nav-bar {
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-link {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding-top: 60px;
+      text-align: center;
+    }
+
+    #video {
+      margin: 20px 0;
+      width: 80%;
+      height: 315px;
+    }
+
+    #form {
+      margin: 20px auto;
+      width: 300px;
+    }
+
+    #email {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    #submit {
+      width: 100%;
+      padding: 10px;
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #submit:hover {
+      background-color: #218838;
+    }
+
+    @media (max-width: 600px) {
+      #nav-bar {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #video {
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header id="header">
+    <img id="header-img" src="https://via.placeholder.com/50" alt="Logo">
+    <nav id="nav-bar">
+      <a href="#features" class="nav-link">Features</a>
+      <a href="#video-section" class="nav-link">Video</a>
+      <a href="#form-section" class="nav-link">Sign Up</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="features" class="main-section">
+      <h1>Features</h1>
+      <p>Discover the amazing features of our product:</p>
+      <ul>
+        <li>Feature 1: High Performance</li>
+        <li>Feature 2: User-Friendly Design</li>
+        <li>Feature 3: 24/7 Support</li>
+      </ul>
+    </section>
+
+    <section id="video-section">
+      <h2>Product Demo</h2>
+      <iframe id="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="form-section">
+      <h2>Stay Updated</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+        <input id="email" name="email" type="email" placeholder="Enter your email" required>
+        <input id="submit" type="submit" value="Subscribe">
+      </form>
+    </section>
+  </main>
+</body>
+</html>
